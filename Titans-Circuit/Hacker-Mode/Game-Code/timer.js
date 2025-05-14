@@ -8,7 +8,7 @@ const blueTimer=()=>{
     document.querySelector(".blue-timer").innerHTML = `${sec}`
     
     blueTimes--
-    redTimes=30
+    redTimes=15
     }
 
     if (blueTimes < 0) {
@@ -28,7 +28,7 @@ const redTimer=()=>{
        document.querySelector(".red-timer").innerHTML = `${sec}`
     
        redTimes--
-       blueTimes=30
+       blueTimes=15
     }
 
     if (redTimes < 0) {

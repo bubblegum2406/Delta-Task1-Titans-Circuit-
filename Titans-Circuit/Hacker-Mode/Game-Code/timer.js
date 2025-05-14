@@ -1,4 +1,4 @@
-let blueTimes = 30; 
+let blueTimes = 15
 let timerb; 
 
 const blueTimer=()=>{
@@ -18,7 +18,7 @@ const blueTimer=()=>{
 }
 
 
-let redTimes = 30
+let redTimes = 15
 let timerr
 const redTimer=()=>{
     if(current=="red" && state==true){

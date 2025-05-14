@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./game.css">
+    <title>Titans Circuit</title>
+</head>
+<body>
+    <div class="main-container">
+    
+    <h1 class="title">Titans Circuit</h1>
+    
+    <div class="game-area">
+    <div class=" sidebar left-history">
+        <h2>History of Moves</h2>
+        <div class="history"></div>
+    </div>
+    
+    <div class="gameboard">
+        <div class="Points">
+            <p><strong>Blue Score : </strong> <span class="blue-score">0</span></p>
+            <p><strong>Red Score : </strong> <span class="red-score">0</span></p>
+            
+           <p>The current player is <span class="current"></span></p>
+            </div>
+    <div class="hexboard"></div>
+    </div>
+    <div class="sidebar function">
+        <div class="timer">
+            <p><strong>Blue Time : </strong><span class="blue-timer">30</span></p>
+            
+            <p><strong>Red Time : </strong><span class="red-timer">30</span></p>
+            
+        </div>
+        <div class="buttons">
+            <button class="pausebtn">Pause</button>
+            <button class="resumebtn">Resume</button>
+            <button class="resetbtn">Reset</button>
+        
+        
+            <button class="undobtn">Undo</button>
+            <button class="redobtn">Redo</button>
+        </div>
+        <div class="winner"></div>
+        <h2 class="leader_title">Leaderboard</h2>
+        <div class="leaderboard">
+            
+        </div>
+        
+    
+    </div>
+    </div>
+    </div>
+    
+
+<script src="./gamework.js"></script>
+<script src="./Game-Code/history.js"></script>
+<script src="./Game-Code/elimination.js"></script>
+<script src="./Game-Code/hexagon.js"></script>
+<script src="./Game-Code/scoreCalculate.js"></script>
+<script src="./Game-Code/movement.js"></script>
+<script src="./Game-Code/placing.js"></script>
+<script src="./Game-Code/timer.js"></script>
+<script src="./Game-Code/win.js"></script>
+<script src="./Game-Code/undoredo.js"></script>
+<script src="./Game-Code/leaderboard.js"></script>
+
+
+</body>
+</html>

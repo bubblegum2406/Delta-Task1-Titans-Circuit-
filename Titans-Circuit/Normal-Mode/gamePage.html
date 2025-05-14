@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    
+    <link rel="stylesheet" href="./game.css">
+    <title>Titans Circuit</title>
+    
+</head>
+<body>
+    <div class="main-container">
+    
+    <h1 class="title">Titans Circuit</h1>
+    
+    <div class="game-area">
+    <div class=" sidebar left-history">
+        <h2>Instructions:</h2>
+        <p>Take turns placing titans on the outermost circuit first and then place the remaining titans on the inner node. When the unlocked circuit is fully filled, the inner circuit gets unlockedOnce all titans are placed, players take turns moving one titan at a time to an adjacent node along connected edges</p>
+        <h2>Scoring Conditions:</h2>
+        <p>An edge is controlled when both its connected nodes are occupied by the same player.
+            Points equal to the edge's weight are added to the player's score.</p>
+        <h2>Winning Conditions:</h2>
+        <p>The game ends when : </p>
+        <p>-The timer runs out</p>
+        <p>-Innermost Circuit is filled</p>
+    </div>
+    
+    <div class="gameboard">
+        <div class="Points">
+            <p><strong>Blue Score : </strong> <span class="blue-score">0</span></p>
+            <p><strong>Red Score : </strong> <span class="red-score">0</span></p>
+            
+           <p>The current player is <span class="current"></span></p>
+            </div>
+    <div class="hexboard"></div>
+    </div>
+    <div class="sidebar function">
+        <div class="timer">
+            <p><strong>Blue Time : </strong><span class="blue-timer">30</span></p>
+            
+            <p><strong>Red Time : </strong><span class="red-timer">30</span></p>
+            
+        </div>
+        <div class="buttons">
+            <button class="pausebtn">Pause</button>
+            <button class="resumebtn">Resume</button>
+            <button class="resetbtn">Reset</button>
+        </div>
+        <div class="winner"></div>
+        
+    
+    </div>
+    </div>
+    </div>
+    
+
+<script src="./gamework.js"></script>
+<script src="./Game-Code/hexagon.js"></script>
+<script src="./Game-Code/scoreCalculate.js"></script>
+<script src="./Game-Code/placing.js"></script>
+<script src="./Game-Code/movement.js"></script>
+<script src="./Game-Code/timer.js"></script>
+<script src="./Game-Code/win.js"></script>
+
+
+</body>
+</html>

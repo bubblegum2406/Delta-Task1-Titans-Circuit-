@@ -6,7 +6,7 @@ function blueTimer() {
     const sec = blueTimes % 60
     document.querySelector(".blue-timer").innerHTML = `${sec}`
     blueTimes--
-    redTimes=30
+    redTimes=15
     }
     if (blueTimes < 0) {
         clearInterval(timerb)     
@@ -21,7 +21,7 @@ function redTimer() {
        const sec = redTimes % 60
        document.querySelector(".red-timer").innerHTML = `${sec}`
        redTimes--
-       blueTimes=30
+       blueTimes=15
     }
     if (redTimes < 0) {
         clearInterval(timerr)  
